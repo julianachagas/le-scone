@@ -1,0 +1,10 @@
+$breapoints-up: (
+  'medium': 720px,  
+  'large': 900px  
+);
+
+@mixin breakpoint($size) {
+  @media screen and (min-width: map-get($breapoints-up, $size)) {
+    @content;
+  }
+}
