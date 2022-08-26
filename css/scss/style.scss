@@ -1,9 +1,2 @@
 @forward 'globals';
 @forward 'layout';
-@forward 'sections/hero';
-@use 'util' as u;
-
-body {
-  background-color: u.$primary-color;
-  border: 10px solid u.$accent-color;
-}
