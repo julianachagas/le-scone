@@ -3,10 +3,14 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
-  width: min(940px, 90%);
+  gap: 40px;
   margin-inline: auto;
+  max-width: 500px;
+  width: 90%;
   @include u.breakpoint(medium) {
     grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    width: min(940px, 95%);
+    max-width: initial;
   }
 }
