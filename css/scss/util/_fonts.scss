@@ -1,2 +1,19 @@
 $primary-font: 'PT Mono', monospace;
 $secondary-font: 'Aref Ruqaa', serif;
+
+@mixin typography-1($size) {
+  font-family: $primary-font;
+  line-height: 1.5;
+  font-size: calc($size / 10) + rem;
+}
+
+@mixin typography-2($size) {
+  font-family: $secondary-font;
+  font-size: calc($size / 10) + rem;
+  @if $size == 18 {
+    line-height: 1.5;
+  } @else if $size == 24 {
+    line-height: 1.25;
+    font-weight: 700;
+  }
+}
