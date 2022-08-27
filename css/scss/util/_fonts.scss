@@ -13,7 +13,7 @@ $secondary-font: 'Aref Ruqaa', serif;
   @if $size == 18 {
     line-height: 1.5;
   } @else if $size == 24 {
-    line-height: 1.25;
+    line-height: 1;
     font-weight: 700;
   }
 }

@@ -1,12 +1,28 @@
-h1,
-h2,
-h3 {
-  font-weight: 700;
-  line-height: 1.1;
+@use '../util/' as u;
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+.section-title {
+  text-transform: uppercase;
+}
+
+p,
+li,
+.section-title, label, form {
+  @include u.typography-1(18);
+}
+
+h2 {
+  @include u.typography-2(24);
 }

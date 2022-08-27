@@ -1,6 +1,7 @@
 @use '../util' as u;
 
 .grid {
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
@@ -8,9 +9,22 @@
   max-width: 500px;
   width: 90%;
   @include u.breakpoint(medium) {
+    margin-top: 6rem;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     width: min(940px, 95%);
     max-width: initial;
+    .grid-area-1 {
+      grid-column: 1/5;
+    }
+    .grid-area-2 {
+      grid-column: 6/-1;
+    }
+    .grid-area-3 {
+      grid-column: 1/8;
+    }
+    .grid-area-4 {
+      grid-column: 11/-1;
+    }
   }
 }

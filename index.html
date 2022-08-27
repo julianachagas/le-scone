@@ -15,28 +15,156 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <main>
+    <main id="home">
       <section class="hero grid">
-        <div class="intro">
+        <div class="intro grid-area-1">
           <div class="intro__logo">
-            <a href="index.html"><img src="img/lescone.png" alt="" /></a>
+            <a href="index.html"
+              ><img
+                src="img/lescone.png"
+                alt="Le Scone Homepage"
+                width="201"
+                height="126"
+            /></a>
           </div>
           <div class="intro__info">
-            <div class="intro__openinghours">
-              <p>Monday - Saturday</p>
+            <div>
+              <p>Mon - Sat</p>
               <p>11:00 - 23:00</p>
             </div>
-            <div class="intro__address">
+            <div>
               <p>Copacabana, 300</p>
               <p>Rio de Janeiro - RJ</p>
             </div>
             <p class="intro__phone">+55 021 2412-3333</p>
           </div>
         </div>
-        <div class="hero__img">
-          <img src="img/foto.png" alt="" width="540" height="700" />
+        <div class="hero__img grid-area-2">
+          <img
+            src="img/foto.png"
+            alt=""
+            width="540"
+            height="700"
+            class="img-cover"
+          />
+        </div>
+      </section>
+      <section class="grid menu">
+        <div class="grid-area-1">
+          <h1 class="section-title">Menu</h1>
+        </div>
+        <div class="grid-area-2">
+          <div class="menu__item">
+            <h2>Pastries</h2>
+            <div>
+              <ul>
+                <li>Scones<span class="menu__price">R$ 6,50</span></li>
+                <li>Muffins<span class="menu__price">R$ 5,50</span></li>
+                <li>Croissant<span class="menu__price">R$ 4,00</span></li>
+                <li>Cinnamon Roll<span class="menu__price">R$ 3,50</span></li>
+                <li>Cookies<span class="menu__price">R$ 6,00</span></li>
+              </ul>
+              <div class="menu__img">
+                <img
+                  src="img/menu-1.jpg"
+                  alt=""
+                  width="180"
+                  height="180"
+                  class="img-cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="menu__item">
+            <h2>Sandwiches</h2>
+            <div>
+              <ul>
+                <li>
+                  Mushrooms & Avocado<span class="menu__price">R$ 18,50</span>
+                </li>
+                <li>
+                  Veggie & Hummus<span class="menu__price">R$ 16,50</span>
+                </li>
+                <li>
+                  Chicken & Cheese<span class="menu__price">R$ 19,50</span>
+                </li>
+                <li>Tuna & Salad<span class="menu__price">R$ 17,00</span></li>
+                <li>Ham & Cheese<span class="menu__price">R$ 15,00</span></li>
+              </ul>
+              <div class="menu__img">
+                <img
+                  src="img/menu-2.jpg"
+                  alt=""
+                  width="180"
+                  height="180"
+                  class="img-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="grid">
+        <div class="grid-area-1">
+          <h1 class="section-title">Contact</h1>
+        </div>
+        <div class="grid-area-2">
+          <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+            <div class="form-group-wrapper">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
+            </div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+            <div class="form-group-wrapper">
+              <button class="btn">Send</button>
+              <div class="contact-details">
+                <p>contact@lescone.com <span>////</span></p>
+                <p>+55 021 2412-3333 <span>////</span></p>
+              </div>
+            </div>
+          </form>
+          <div class="map">
+            <img
+              src="img/map.png"
+              alt=""
+              width="540"
+              height="180"
+              class="img-cover"
+            />
+          </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="grid">
+        <div class="grid-area-3">
+          <p>Le Scone & Origamid &copy; 2022</p>
+          <p>
+            Made with &#9825; by
+            <a href="https://github.com/julianachagas" target="_blank"
+              >Juliana Chagas</a
+            >
+          </p>
+        </div>
+        <div class="grid-area-4 footer-logo">
+          <a href="#home"
+            ><img
+              src="img/lescone-icone.png"
+              alt="Back to the top of the page"
+              width="45"
+              height="26"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
