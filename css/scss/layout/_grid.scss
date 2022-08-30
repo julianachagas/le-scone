@@ -1,5 +1,15 @@
 @use '../util' as u;
 
+@function grid($col, $offset: 0) {
+  $grid-column-start: 1;
+  $grid-column-end: $col + 1;
+  @if $offset > 0 {
+    $grid-column-start: $offset + 1;
+    $grid-column-end: $grid-column-start + $col;
+  }
+  @return #{$grid-column-start} / #{$grid-column-end};
+}
+
 .grid {
   margin-top: 3rem;
   display: grid;
@@ -14,17 +24,17 @@
     gap: 20px;
     width: min(940px, 95%);
     max-width: initial;
-    .grid-area-1 {
-      grid-column: 1/5;
+    .grid-4 {
+      grid-column: grid(4);
     }
-    .grid-area-2 {
-      grid-column: 6/-1;
+    .grid-7-offset-5 {
+      grid-column: grid(7, 5);
     }
-    .grid-area-3 {
-      grid-column: 1/8;
+    .grid-7 {
+      grid-column: grid(7);
     }
-    .grid-area-4 {
-      grid-column: 11/-1;
+    .grid-2-offset-10 {
+      grid-column: grid(2, 10);
     }
   }
 }
