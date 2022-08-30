@@ -18,12 +18,8 @@ body {
   min-height: 100vh;
   font-size: 1.6rem;
   background-color: u.$primary-color;
-}
-
-main {
   @include u.breakpoint(medium) {
     border: 10px solid u.$accent-color;
-    border-bottom: none;
   }
 }
 
