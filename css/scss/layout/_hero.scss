@@ -15,14 +15,13 @@
   gap: 5rem;
   &__info div {
     border-right: 2px solid u.$secondary-color;
-    padding: 1.6rem 0.5rem 1.6rem 0;
+    padding: 1rem 0.5rem 1rem 0;
   }
   &__info div:first-child {
     border-bottom: 2px solid u.$secondary-color;
   }
   &__phone {
-    color: u.$highlight-color;
-    line-height: 2;
+    color: u.$highlight-color;    
   }
   @include u.breakpoint(medium) {
     &::after {
