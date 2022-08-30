@@ -1,11 +1,11 @@
 @use '../util' as u;
 
-.hero {  
-  &__img {    
+.hero {
+  &__img {
     border: 10px solid u.$accent-color;
     margin-inline: auto;
     width: 100%;
-  }  
+  }
 }
 
 .intro {
@@ -21,10 +21,10 @@
     border-bottom: 2px solid u.$secondary-color;
   }
   &__phone {
-    color: u.$input-border-color;
+    color: u.$highlight-color;
     line-height: 2;
   }
-  @include u.breakpoint(medium) {    
+  @include u.breakpoint(medium) {
     &::after {
       content: '/ / / /';
       display: block;
