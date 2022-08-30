@@ -17,7 +17,7 @@
   <body>
     <main id="home">
       <section class="hero grid">
-        <div class="intro grid-area-1">
+        <div class="intro grid-4">
           <div class="intro__logo">
             <a href="index.html"
               ><img
@@ -30,16 +30,16 @@
           <div class="intro__info">
             <div>
               <p>Mon - Sat</p>
-              <p>11:00 - 23:00</p>
+              <p>11:00 - 22:00</p>
             </div>
             <div>
-              <p>Copacabana, 300</p>
-              <p>Rio de Janeiro - RJ</p>
+              <p>221 Baker Street</p>
+              <p>London - UK</p>
             </div>
-            <p class="intro__phone">+55 021 2412-3333</p>
+            <p class="intro__phone">+44 20 7412 3333</p>
           </div>
         </div>
-        <div class="hero__img grid-area-2">
+        <div class="hero__img grid-7-offset-5">
           <img
             src="img/foto.png"
             alt=""
@@ -50,19 +50,19 @@
         </div>
       </section>
       <section class="grid menu">
-        <div class="grid-area-1">
+        <div class="grid-4">
           <h1 class="section-title">Menu</h1>
         </div>
-        <div class="grid-area-2">
+        <div class="grid-7-offset-5">
           <div class="menu__item">
             <h2>Pastries</h2>
             <div>
               <ul>
-                <li>Scones<span class="menu__price">R$ 6,50</span></li>
-                <li>Muffins<span class="menu__price">R$ 5,50</span></li>
-                <li>Croissant<span class="menu__price">R$ 4,00</span></li>
-                <li>Cinnamon Roll<span class="menu__price">R$ 3,50</span></li>
-                <li>Cookies<span class="menu__price">R$ 6,00</span></li>
+                <li>Scones<span class="menu__price">£2,20</span></li>
+                <li>Muffins<span class="menu__price">£2,10</span></li>
+                <li>Croissant<span class="menu__price">£2,00</span></li>
+                <li>Cinnamon Roll<span class="menu__price">£2,30</span></li>
+                <li>Cookies<span class="menu__price">£2,00</span></li>
               </ul>
               <div class="menu__img">
                 <img
@@ -80,16 +80,16 @@
             <div>
               <ul>
                 <li>
-                  Mushrooms & Avocado<span class="menu__price">R$ 18,50</span>
+                  Mushrooms & Avocado<span class="menu__price">£4,80</span>
                 </li>
                 <li>
-                  Veggie & Hummus<span class="menu__price">R$ 16,50</span>
+                  Veggie & Hummus<span class="menu__price">£5,00</span>
                 </li>
                 <li>
-                  Chicken & Cheese<span class="menu__price">R$ 19,50</span>
+                  Chicken & Cheese<span class="menu__price">£5,50</span>
                 </li>
-                <li>Tuna & Salad<span class="menu__price">R$ 17,00</span></li>
-                <li>Ham & Cheese<span class="menu__price">R$ 15,00</span></li>
+                <li>Tuna & Salad<span class="menu__price">£5,00</span></li>
+                <li>Ham & Cheese<span class="menu__price">£4,80</span></li>
               </ul>
               <div class="menu__img">
                 <img
@@ -105,10 +105,10 @@
         </div>
       </section>
       <section class="grid">
-        <div class="grid-area-1">
+        <div class="grid-4">
           <h1 class="section-title">Contact</h1>
         </div>
-        <div class="grid-area-2">
+        <div class="grid-7-offset-5">
           <form>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" required />
@@ -127,27 +127,34 @@
             <div class="form-group-wrapper">
               <button class="btn">Send</button>
               <div class="contact-details">
-                <p>contact@lescone.com <span>////</span></p>
-                <p>+55 021 2412-3333 <span>////</span></p>
+                <p>contact@lescone.com ////</p>
+                <p>+44 20 7412 3333 ////</p>
               </div>
             </div>
           </form>
           <div class="map">
-            <img
-              src="img/map.png"
-              alt=""
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.323866301226!2d2.337575264491271!3d48.858031527062174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e21d5612e43%3A0xa474d820628b6c2d!2sLe%20Scone%20Caf%C3%A9!5e0!3m2!1sen!2sbr!4v1661863710100!5m2!1sen!2sbr"
               width="540"
               height="180"
-              class="img-cover"
-            />
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="grid">
-        <div class="grid-area-3">
-          <p>Le Scone & Origamid &copy; 2022</p>
+        <div class="grid-7">
+          <p>
+            <a href="https://www.origamid.com/" target="_blank"
+              >Le Scone & Origamid</a
+            >
+            &copy; 2022
+          </p>
           <p>
             Made with &#9825; by
             <a href="https://github.com/julianachagas" target="_blank"
@@ -155,7 +162,7 @@
             >
           </p>
         </div>
-        <div class="grid-area-4 footer-logo">
+        <div class="grid-2-offset-10 footer-logo">
           <a href="#home"
             ><img
               src="img/lescone-icone.png"
