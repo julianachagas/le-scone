@@ -3,7 +3,6 @@
 footer {
   background-color: u.$secondary-color;
   text-align: center;
-  border: 10px solid transparent;
   .grid {
     margin-top: 0;
     padding-block: 3rem;
@@ -26,6 +25,7 @@ footer {
     @include u.typography-1(16);
   }
   @include u.breakpoint(medium) {
+    box-shadow: 0 0 0 10px u.$secondary-color;
     text-align: left;
     .footer-logo {
       margin: initial;
