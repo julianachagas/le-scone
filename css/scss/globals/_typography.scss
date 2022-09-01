@@ -17,9 +17,7 @@ a:active {
   text-transform: uppercase;
 }
 
-p,
-li,
-.section-title, label, form {
+body, .section-title {
   @include u.typography-1(18);
 }
 
